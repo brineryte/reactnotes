@@ -6,8 +6,8 @@
     width: 60%;
     font-family: 'Lato', sans-serif;
     font-size: 1.4em;
-    color: #222;
-    background-color: #eed; 
+    color: rgb(247, 240, 240);
+    background-color: rgb(70, 70, 65); 
     border-radius: 3px;
     box-shadow: 43x 3px 2px #333;
     opacity: 1;
@@ -31,7 +31,7 @@
   }
   
   .closebtn {
-      color: #AA9;
+      color: rgb(209, 209, 190);
       font-weight: bold;
       float: right;
       cursor: pointer;
