@@ -41,3 +41,30 @@
   .closebtn:hover {
       color: #AC2500;
   }
+
+  .editBtn {
+    color: rgb(209, 209, 190);
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-right: 10px;
+  }
+
+  .editBtn:hover {
+    color: rgb(0, 172, 57);
+}
+
+  .url{
+      display: block;
+      color: #F4B350;
+  }
+
+  .url:visited{
+      color:rgba(224, 5, 107, 0.719);
+  }
+
+  .url:hover{
+    color: rgb(255, 91, 186);
+    transition: 0.1s ease-out;
+}

@@ -9,6 +9,7 @@ class NoteForm extends Component {
             newNoteContent: '',
         };
         this.handleUserInput = this.handleUserInput.bind(this);
+        this.handleKeyUp = this.handleKeyUp.bind(this);
         this.writeNote = this.writeNote.bind(this);
     }
 
@@ -18,6 +19,12 @@ class NoteForm extends Component {
         this.setState({
             newNoteContent: e.target.value, //value of text input
         });
+    }
+
+    handleKeyUp(e){
+        if(e.key === 'Enter'){
+            this.writeNote();
+        }
     }
 
     writeNote(){
@@ -37,7 +44,8 @@ class NoteForm extends Component {
                 <input className="noteInput"
                 placeholder="Write a new note..." 
                 value={this.state.newNoteContent}
-                onChange={this.handleUserInput}/>
+                onChange={this.handleUserInput}
+                onKeyUp={this.handleKeyUp}/>
                 <button className="noteButton"
                 onClick={this.writeNote}>Add Note</button>
             </div>
