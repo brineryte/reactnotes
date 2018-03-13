@@ -25,7 +25,7 @@ class App extends Component {
     const previousNotes = this.state.notes;
 
     // DataSnapshot
-    this.database .on('child_added', snap => {
+    this.database.on('child_added', snap => {
       previousNotes.push({
         id: snap.key,
         noteContent: snap.val().noteContent,
